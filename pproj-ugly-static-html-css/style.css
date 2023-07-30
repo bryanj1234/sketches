@@ -1,6 +1,11 @@
+:root {
+    --flex-dir: row;
+}
+
 html {
     font-size: 1vw;
 }
+
 
 @media screen and (max-width: 1000px) {
     html {
@@ -15,8 +20,11 @@ html {
 }
 
 @media screen and (max-width: 500px) {
+    :root {
+        --flex-dir: column;
+    }
     html {
-        font-size: 2.3vw;
+        font-size: 4vw;
     }
 }
 
@@ -79,8 +87,8 @@ header img {
 nav {
     margin-top:1.5em;
     margin-bottom:1.5em;
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:auto;
+    margin-right:auto;
     display: flex;
     background-color: #ea612b;
 }
@@ -93,6 +101,7 @@ nav > div {
 
 section {
     display: flex;
+    flex-direction:var(--flex-dir);
 }
 
 article {
