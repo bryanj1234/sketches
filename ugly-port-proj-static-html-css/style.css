@@ -1,0 +1,235 @@
+html {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 2.3vw;
+    }
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    background-color: #74a404;
+    border: #aec810;
+    border-style: solid;
+    padding: 1rem;
+    border-radius: 50%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+
+    margin: auto;
+
+    animation: wigglesmall 2s ease-in-out infinite alternate; 
+}
+
+main {
+    background-color: #74a404;
+    padding: 1rem;
+    border: #ea612b;
+    border-style: solid;
+    border-radius: 5%;
+
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+}
+
+.bannerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width:1200px
+}
+
+nav {
+    margin-top:1em;
+    margin-bottom:1em;
+    display: flex;
+    background-color: #ea612b;
+}
+
+nav > div {
+    flex: 1;
+    text-align: center;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+.item {
+    background-color: #ffffff;
+    color: #333333;
+    margin:0.5rem;
+    padding:1rem;
+    padding-bottom:0rem;
+    border-style:solid;
+    border-color: #aec810;
+    border-radius: 1rem;
+}
+
+.item > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+footer {
+    background-color: #74a404;
+    display: flex;
+    border: #aec810;
+    border-style: solid;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top:1rem;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+footer > div {
+    flex: 1;
+}
+
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #dddddd;
+    height:5rem;
+    line-height: 5rem;
+    border-left-style: solid;
+    border-left-color: #dddddd;
+}
+
+footer > div {
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin:0.5em;
+    text-align: center;
+
+    background-color: #ea612b;
+    border:solid;
+    border-radius: 1rem;
+
+    text-shadow: 2px 2px 2px #aec810, 0.1rem 0.05rem #ea612b;
+
+    animation: myanimation 0.5s linear infinite alternate; 
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #aec810;
+    text-align: center;
+
+    font-style:italic;
+}
+
+a[href] {
+    background-color: #fff;
+    color: #ea612b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:0.5rem;
+    text-decoration: none;
+    border-style:solid;
+    border-radius: 20%;
+
+    transition: 0.1s;
+}
+
+a[href]:hover, a[href]:active {
+    background-color: #d9f80c;
+    color:#74a404;
+    padding:1rem;
+    font-size: 2rem;
+
+    animation: wiggle 0.3s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes myanimation{
+    from{color: #d9f80c;} 
+    to{color: #ffffff;}
+}
+
+@keyframes wigglesmall {
+    from{
+        background-color:#74a404;
+        color:#d9f80c;
+        border-radius: 15%;
+        border-top-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        width:90%;
+    } 
+    to{
+        background-color: #a5be02;
+        color:#4b6905;
+        border-radius: 15%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        width:90%;
+    }
+}
+
+@keyframes wiggle {
+    from{
+        background-color:#74a404;
+        color:#d9f80c;
+        border-radius: 50%;
+        border-top-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        width:50%;
+    } 
+    to{
+        background-color: #a5be02;
+        color:#4b6905;
+        border-radius: 50%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        width:90%;
+    }
+}
+
