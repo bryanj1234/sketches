@@ -27,8 +27,11 @@ body {
 
     margin-top: 1rem;
     margin-bottom: 3rem;
-    margin-left: 10%;
-    margin-right: 10%;
+
+    max-width: 70rem;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -40,7 +43,8 @@ header {
     border-top-left-radius: 0%;
     border-bottom-right-radius: 0%;
 
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 
     animation: wigglesmall 2s ease-in-out infinite alternate; 
 }
@@ -52,13 +56,16 @@ main {
     border-style: solid;
     border-radius: 5%;
 
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 10em;
+    height: 5rem;
 }
 
 .bannerimage {
@@ -70,8 +77,10 @@ header img {
 }
 
 nav {
-    margin-top:1em;
-    margin-bottom:1em;
+    margin-top:1.5em;
+    margin-bottom:1.5em;
+    margin-left:10%;
+    margin-right:10%;
     display: flex;
     background-color: #ea612b;
 }
@@ -79,6 +88,7 @@ nav {
 nav > div {
     flex: 1;
     text-align: center;
+    align-self: center;
 }
 
 section {
@@ -127,7 +137,7 @@ footer img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 5em;
+    height: 5rem;
 }
 
 footer p {
@@ -183,12 +193,9 @@ a[href]:hover, a[href]:active {
     background-color: #d9f80c;
     color:#74a404;
     padding:1rem;
-    font-size: 2rem;
 
     animation: wiggle 0.3s ease-in-out infinite alternate;
 }
-
-
 
 @keyframes myanimation{
     from{color: #d9f80c;} 
@@ -202,7 +209,7 @@ a[href]:hover, a[href]:active {
         border-radius: 15%;
         border-top-left-radius: 10%;
         border-bottom-right-radius: 10%;
-        width:90%;
+        /* width:90%; */
     } 
     to{
         background-color: #a5be02;
@@ -210,7 +217,7 @@ a[href]:hover, a[href]:active {
         border-radius: 15%;
         border-top-right-radius: 10%;
         border-bottom-left-radius: 10%;
-        width:90%;
+        /* width:90%; */
     }
 }
 
