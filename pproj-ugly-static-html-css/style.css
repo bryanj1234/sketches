@@ -7,19 +7,19 @@ html {
 }
 
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
     html {
         font-size: 1.3vw;
     }
 }
 
-@media (max-width: 750px) {
+@media (width <= 750px) {
     html {
         font-size: 1.7vw;
     }
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
     :root {
         --flex-dir: column;
     }
